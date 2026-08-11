@@ -87,17 +87,24 @@ Run the streaming example:
 python streaming.py
 ```
 
+Verify the endpoint with cURL (no Python required):
+
+```bash
+./curl_chat_completions.sh
+```
+
 ## Project Structure
 
 ```
 .
-├── .env.example       # Template for environment variables
+├── .env.example              # Template for environment variables
 ├── .gitignore
-├── requirements.txt   # Python dependencies
-├── list_models.py     # List available models on bedrock-mantle
-├── hello_mantle.py    # Chat Completions API - basic hello world
-├── responses_api.py   # Responses API - stateful multi-turn conversation
-├── streaming.py       # Streaming responses example
+├── requirements.txt          # Python dependencies
+├── list_models.py            # List available models on bedrock-mantle
+├── hello_mantle.py           # Chat Completions API - basic hello world
+├── responses_api.py          # Responses API - stateful multi-turn conversation
+├── streaming.py              # Streaming responses example
+├── curl_chat_completions.sh  # cURL verification (no Python needed)
 ├── LICENSE
 └── README.md
 ```
